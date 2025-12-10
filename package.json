@@ -1,12 +1,14 @@
 {
   "name": "janaki-birthday-quest",
+  "homepage": "https://k-praneeth567.github.io/Birthday_proj-1",
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
     "vite": "^5.0.0"
