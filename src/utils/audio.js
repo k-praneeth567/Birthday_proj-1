@@ -4,9 +4,11 @@ class AudioManager {
       this.enabled = false
       return
     }
-    this.bg = new Audio('/audio/bg-music.mp3')
+    // Use import.meta.env.BASE_URL to support GitHub Pages subdirectory hosting
+    const baseUrl = import.meta.env.BASE_URL || '/'
+    this.bg = new Audio(`${baseUrl}audio/bg-music.mp3`)
     this.bg.loop = true
-    this.click = new Audio('/audio/click.mp3')
+    this.click = new Audio(`${baseUrl}audio/click.mp3`)
     this.musicOn = false
   }
 
